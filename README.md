@@ -1,77 +1,8 @@
-#define _CRT_SECURE_NO_WARNINGS
-#include <iostream>
-using namespace std;
-
-
-class Fruit
-{
-public:
-	virtual void sayName()
-	{
-		cout << "Fruit" << endl;
-	}
-};
-class FruitFactory
-{
-public:
-	virtual Fruit *getBanana()
-	{
-		cout << "FruitFactory:getBanana " << endl;
-		return NULL;
-	}
-	virtual Fruit *getApple()
-	{
-		cout << "FruitFactory:getApple " << endl;
-		return NULL;
-	}
-};
-class NorthApple:public Fruit
-{
-public:
-	virtual void sayName()
-	{
-		cout << "NorthApple" << endl;
-	}
-};
-class NorthBanana :public Fruit
-{
-public:
-	virtual void sayName()
-	{
-		cout << "NorthBanana" << endl;
-	}
-};
-class SouthApple :public Fruit
-{
-public:
-	virtual void sayName()
-	{
-		cout << "SouthApple" << endl;
-	}
-};
-class SouthBanana :public Fruit
-{
-public:
-	virtual void sayName()
-	{
-		cout << "SouthBanana" << endl;
-	}
-};
-class NorthFactory :public FruitFactory
-{
-public:
-	virtual Fruit *getBanana()
-	{
-		return new NorthBanana;
-	}
-	virtual Fruit *getApple()
-	{
-		return new NorthApple;
-	}
-};
-int main(void)
-{	
-	
-	cout<<"hello word!"<<endl;
-	return 0;
-}
+第一次写程序有点小激动。
+功能：
+1.日志(C:\\Windows\\system32\\test.log)
+2.增加 用户名/密码
+3.删除 用户名/密码
+4.修改 用户名/密码
+5.主要用来存放 用户名/密码 的。默认存放路径：c：\\Windows\\system32\\password_edit.ini 中
+6.程序写的很乱，好多东西都不知道怎么用了。很多都是瞎凑上去的；
