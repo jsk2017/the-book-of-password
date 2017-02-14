@@ -9,6 +9,14 @@ using namespace std;
 
 int main(void)
 {
+	char Password[64];
+	cout<<"Please input the Root_Password!"<<endl;
+	cin>>Password;
+	if (strcmp(Password,"******")!=0)
+	{
+		cout<<"error!"<<endl;
+		return 0;
+	}
 	int select;
 	while (1)
 	{
